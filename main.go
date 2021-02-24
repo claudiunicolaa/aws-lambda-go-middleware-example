@@ -13,9 +13,8 @@ type handlerFunc func(context.Context, events.APIGatewayProxyRequest) (events.AP
 // things to be done before running the business logic
 func logging(f handlerFunc) handlerFunc {
 	return func(ctx context.Context, r events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-		response, err := f(ctx, r)
 		log.Printf("remote_addr: %s", r.RequestContext.Identity.SourceIP)
-		return response, err
+		return f(ctx, r)
 	}
 }
 
