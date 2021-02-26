@@ -1,4 +1,4 @@
-# lambda-middleware-example
+# aws-lambda-middleware-example
 
 The construction of simple app that knows to say "i'm an app" and logs each interaction.
 
