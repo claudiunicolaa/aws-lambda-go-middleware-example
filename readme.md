@@ -1,6 +1,8 @@
 # aws-lambda-middleware-example
 
-The construction of simple app that knows to say "i'm an app" and logs each interaction.
+**From**: a simple app that knows to say "i'm an app" in terminal
+
+**To**: an AWS Lambda written in Go that has a logger middleware.
 
 <details>
   <summary><b>1. Print to terminal</b></summary>
